@@ -16,7 +16,7 @@ class KataTest extends \PHPUnit_Framework_TestCase
             $crawler = array_search('Buzz',$client);
             if ($crawler%3 != 0)
             {
-
+            
             }
 
         }
