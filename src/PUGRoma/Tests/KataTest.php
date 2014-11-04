@@ -13,13 +13,18 @@ class KataTest extends \PHPUnit_Framework_TestCase
 
         foreach ($client as $client)
         {
-            $crawler = array_search('Buzz',$client);
-            if ($crawler%3 != 0)
+            $crawler = array_search('Buzz', $client);
+            $crawler = array_search('Fizz', $client);
+            $crawler = array_search('BuzzFizz', $client);
+
+            if( isset ($crawler))
             {
-            
+             if ($crawler%3 != 0 || $crawler%5 != 0)
+             {
+                 echo "Sparo l'eccezzione";
+             }
             }
 
         }
-
     }
 }
