@@ -4,26 +4,26 @@
 
 class Kata
 {
-    $contenitore = array();
+   // $contenitore = array;
 
     public function isReady()
     {
     for ($i = 1; $i<=100; $i++)
         {
-        if ($i%3 == 0)
+            if ($i%3 == 0)
             {
-             if ($i%5 == 0)
+                if ($i%5 == 0)
                 {
-                 $contenitore[$i]="FizzBuzz"."\n";
+                    $contenitore[$i]="FizzBuzz"."\n";
                 }
             }
-
-        else{$contenitore[$i]="Fizz"."\n";}
+                else$contenitore[$i]="Fizz"."\n";
 
          if ($i%5 == 0)
-         {$contenitore[$i]="Buzz"."\n";}
-
-         else{$contenitore[$i]=$i."\n";}
+         {
+             $contenitore[$i]="Buzz"."\n";
+         }
+         else $contenitore[$i]=$i."\n";
 
         }//CHIUDE FOR
 
@@ -32,4 +32,6 @@ class Kata
 
 }
 
-$smazzamelo = new Kata();
+$lista = new Kata();
+$smazzamelo = $lista->isReady();
+print_r($smazzamelo);
