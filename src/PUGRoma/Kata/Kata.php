@@ -1,6 +1,6 @@
 <?php
 
-// namespace PUGRoma\Kata;
+namespace PUGRoma\Kata;
 
 class Kata
 {
