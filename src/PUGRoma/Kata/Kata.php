@@ -4,34 +4,32 @@
 
 class Kata
 {
-   // $contenitore = array;
-
-    public function isReady()
+    public function BuzFizzer()
     {
-    for ($i = 1; $i<=100; $i++)
+        for($i=0; $i <=100; $i++)
         {
             if ($i%3 == 0)
             {
                 if ($i%5 == 0)
                 {
-                    $contenitore[$i]="FizzBuzz"."\n";
+                    $contenitore[$i]="BuzzFizz"."\n";
                 }
+
+                else $contenitore[$i]= "Buzz"."\n";
             }
-                else$contenitore[$i]="Fizz"."\n";
+            else if ($i%5 == 0)
+            {
+                $contenitore[$i]="Fizz"."\n";
 
-         if ($i%5 == 0)
-         {
-             $contenitore[$i]="Buzz"."\n";
-         }
-         else $contenitore[$i]=$i."\n";
+            }
+            else $contenitore[$i]= $i."\n";
 
-        }//CHIUDE FOR
+        }
 
-     return $contenitore;
+        return $contenitore;
     }
-
 }
 
-$lista = new Kata();
-$smazzamelo = $lista->isReady();
-print_r($smazzamelo);
+$risultato = new Kata();
+$vedi = $risultato->BuzFizzer();
+print_r ($vedi);
