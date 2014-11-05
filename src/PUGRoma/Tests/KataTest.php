@@ -9,23 +9,22 @@ class KataTest extends \PHPUnit_Framework_TestCase
         $ghetter = new \Kata();
         $inquisitore = $ghetter->BuzFizzer();
 
-        foreach(array($inquisitore) as $inquisito)
+        foreach($inquisitore as $posizione => $valore)
         {
-            if ($inquisito % 3 == 0)
+            if (($posizione + 1) % 3 == 0)
             {
-            $this->assertTrue($inquisito,'Buzz');
-
-                if ($inquisito % 5 == 0)
+                if (($posizione + 1) % 5 == 0)
                 {
-                    $this->assertTrue($inquisito,'FizzBuzz');
+                    $this->assertTrue($valore, 'FizzBuzz');
                 }
-
+                else {
+                    $this->assertTrue($valore, 'Buzz');
+                }
             }
-            else if ($inquisito % 5 == 0)
+            else if (($posizione + 1) % 5 == 0)
             {
-                $this->assertTrue($inquisito,'Fizz');
+                $this->assertTrue($valore, 'Fizz');
             }
         }
     }
-
 }
