@@ -15,15 +15,15 @@ class KataTest extends \PHPUnit_Framework_TestCase
             {
                 if (($posizione + 1) % 5 == 0)
                 {
-                    $this->assertTrue($valore, 'FizzBuzz');
+                    $this->assertEquals($valore, 'FizzBuzz');
                 }
                 else {
-                    $this->assertTrue($valore, 'Buzz');
+                    $this->assertEquals($valore, 'Buzz');
                 }
             }
             else if (($posizione + 1) % 5 == 0)
             {
-                $this->assertTrue($valore, 'Fizz');
+                $this->assertEquals($valore, 'Fizz');
             }
         }
     }
