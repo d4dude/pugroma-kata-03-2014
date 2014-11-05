@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="33a76853-6e5b-42e4-9a72-d927b3ffa381" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PUGRoma/Tests/KataTest.php" afterPath="$PROJECT_DIR$/src/PUGRoma/Tests/KataTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pugroma-kata-03-2014.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +40,8 @@
       <file leaf-file-name="KataTest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PUGRoma/Tests/KataTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5324074" vertical-offset="90" max-vertical-offset="765">
-              <caret line="29" column="82" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="82" />
+            <state vertical-scroll-proportion="0.7175926" vertical-offset="0" max-vertical-offset="648">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -307,8 +306,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PUGRoma/Tests/KataTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5324074" vertical-offset="90" max-vertical-offset="765">
-          <caret line="29" column="82" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="82" />
+        <state vertical-scroll-proportion="0.7175926" vertical-offset="0" max-vertical-offset="648">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
