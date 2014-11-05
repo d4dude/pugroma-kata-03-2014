@@ -29,7 +29,3 @@ class Kata
         return $contenitore;
     }
 }
-
-$risultato = new Kata();
-$vedi = $risultato->BuzFizzer();
-print_r ($vedi);
