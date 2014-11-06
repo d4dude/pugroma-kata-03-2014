@@ -8,7 +8,9 @@ class KataTest extends \PHPUnit_Framework_TestCase
     {
         $ghetter = new Kata();
         $inquisitore = $ghetter->BuzFizzer();
-        
+
+        $this->assertCount(100, $inquisitore);
+
         foreach($inquisitore as $posizione => $valore)
         {
             if (($posizione) % 3 == 0)

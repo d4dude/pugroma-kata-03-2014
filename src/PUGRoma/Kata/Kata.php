@@ -12,7 +12,6 @@ class Kata
             {
                 if ($i%5 == 0)
                 {
-                    //$contenitore[$i]="BuzzFizz"."\n";
                     $contenitore[$i]="BuzzFizz";
                 }
 
