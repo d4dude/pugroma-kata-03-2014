@@ -4,30 +4,62 @@ namespace PUGRoma\Kata;
 
 class Kata
 {
-    public function BuzFizzer()
+
+public  $container = array(1,100);
+
+    public function Rover($container)
     {
-        for($i=1; $i <=100; $i++)
+
+        foreach ($container as $key => $value)
         {
-            if ($i%3 == 0)
-            {
-                if ($i%5 == 0)
-                {
-                    $contenitore[$i]="BuzzFizz";
-                }
 
-                else $contenitore[$i]="Buzz";
-            }
-            else if ($i%5 == 0)
-            {
-                $contenitore[$i]="Fizz";
-
-            }
-            else $contenitore[$i]= $i;
+            $container[$key] = $this->discriminator($value);
 
         }
 
-        return $contenitore;
+
     }
+
+    public function discriminator($value)
+    {
+        if ($value % 3 == 0)
+        {
+            if ($value % 5 == 0){$this->BuzzFizzer($value);}
+
+            else {$this->Buzzer($value);}
+        }
+
+        elseif ($value % 5 == 0){$this->Fizzer($value);}
+
+        return $value;
+    }
+
+    public function Buzzer($value)
+    {
+
+        $this->value = "Buzz";
+        return $value;
+
+    }
+
+    public function Fizzer($value)
+    {
+
+        $this->value = "Fizz";
+        return $value;
+
+    }
+
+    public function BuzzFizzer($value)
+    {
+
+        $this->value = "BuzzFizz";
+        return $value;
+
+    }
+
+    return $container;
+
 }
 
 //$risultato = new Kata();
