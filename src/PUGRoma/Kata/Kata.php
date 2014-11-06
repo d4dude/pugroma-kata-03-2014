@@ -1,6 +1,6 @@
 <?php
 
-//namespace PUGRoma\Kata;
+namespace PUGRoma\Kata;
 
 class Kata
 {
@@ -12,17 +12,18 @@ class Kata
             {
                 if ($i%5 == 0)
                 {
-                    $contenitore[$i]="BuzzFizz"."\n";
+                    //$contenitore[$i]="BuzzFizz"."\n";
+                    $contenitore[$i]="BuzzFizz";
                 }
 
-                else $contenitore[$i]= "Buzz"."\n";
+                else $contenitore[$i]="Buzz";
             }
             else if ($i%5 == 0)
             {
-                $contenitore[$i]="Fizz"."\n";
+                $contenitore[$i]="Fizz";
 
             }
-            else $contenitore[$i]= $i."\n";
+            else $contenitore[$i]= $i;
 
         }
 
@@ -30,6 +31,6 @@ class Kata
     }
 }
 
-$risultato = new Kata();
-$vedi = $risultato->BuzFizzer();
-print_r ($vedi);
+//$risultato = new Kata();
+//$vedi = $risultato->BuzFizzer();
+//print_r ($vedi);

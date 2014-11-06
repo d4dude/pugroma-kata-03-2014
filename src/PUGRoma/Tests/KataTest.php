@@ -6,22 +6,22 @@ class KataTest extends \PHPUnit_Framework_TestCase
 {
     public function testStart()
     {
-        $ghetter = new \Kata();
+        $ghetter = new Kata();
         $inquisitore = $ghetter->BuzFizzer();
-
+        
         foreach($inquisitore as $posizione => $valore)
         {
-            if (($posizione + 1) % 3 == 0)
+            if (($posizione) % 3 == 0)
             {
-                if (($posizione + 1) % 5 == 0)
+                if (($posizione) % 5 == 0)
                 {
-                    $this->assertEquals($valore, 'FizzBuzz');
+                    $this->assertEquals($valore, 'BuzzFizz');
                 }
                 else {
                     $this->assertEquals($valore, 'Buzz');
                 }
             }
-            else if (($posizione + 1) % 5 == 0)
+            else if (($posizione) % 5 == 0)
             {
                 $this->assertEquals($valore, 'Fizz');
             }
